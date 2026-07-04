@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
   <title>Cai Xia SPA & Massage | Jacksonville Luxury Spa</title>
   <meta name="description" content="Cai Xia SPA & Massage in Jacksonville, FL offers a quiet, private, clean and refined spa atmosphere for relaxation and wellness." />
 
@@ -30,9 +31,13 @@
       --ease: cubic-bezier(.2, .8, .2, 1);
     }
 
-    * { box-sizing: border-box; }
+    * {
+      box-sizing: border-box;
+    }
 
-    html { scroll-behavior: smooth; }
+    html {
+      scroll-behavior: smooth;
+    }
 
     body {
       margin: 0;
@@ -58,7 +63,9 @@
       text-decoration: none;
     }
 
-    button, input, textarea {
+    button,
+    input,
+    textarea {
       font: inherit;
     }
 
@@ -102,7 +109,9 @@
       color: #8a6b2e;
     }
 
-    h1, h2, h3 {
+    h1,
+    h2,
+    h3 {
       margin: 0;
       font-family: "Playfair Display", Georgia, serif;
       line-height: 1.02;
@@ -192,7 +201,9 @@
       transform: translateY(0);
     }
 
-    /* Header */
+    /* =========================
+       Header
+    ========================== */
     .site-header {
       position: fixed;
       inset: 0 0 auto;
@@ -283,7 +294,9 @@
       cursor: pointer;
     }
 
-    /* Hero */
+    /* =========================
+       Hero
+    ========================== */
     .hero {
       min-height: 100svh;
       display: grid;
@@ -379,7 +392,9 @@
       text-transform: uppercase;
     }
 
-    /* About */
+    /* =========================
+       About
+    ========================== */
     .split {
       display: grid;
       grid-template-columns: 1.05fr .95fr;
@@ -476,7 +491,9 @@
       line-height: 1.7;
     }
 
-    /* Experience */
+    /* =========================
+       Experience
+    ========================== */
     .experience-head,
     .services-intro {
       display: flex;
@@ -531,7 +548,9 @@
       font-size: 27px;
     }
 
-    /* Services placeholder */
+    /* =========================
+       Services Placeholder
+    ========================== */
     .services-panel {
       display: grid;
       grid-template-columns: 1.1fr .9fr;
@@ -561,7 +580,7 @@
       overflow: hidden;
       background:
         linear-gradient(180deg, rgba(7, 17, 15, .06), rgba(7, 17, 15, .74)),
-        url("https://i.pinimg.com/1200x/6a/df/fe/6adffe5706bdce88dd2d2d0fc6875398.jpg") center/cover;
+        url("https://i.pinimg.com/1200x/dc/36/fe/dc36feaf9cc11bec29cc3de7834c539e.jpg") center/cover;
       display: grid;
       align-items: end;
       padding: 24px;
@@ -580,7 +599,9 @@
       text-transform: uppercase;
     }
 
-    /* Gallery */
+    /* =========================
+       Gallery
+    ========================== */
     .gallery-grid {
       grid-template-columns: 1.1fr .9fr 1fr;
       grid-auto-rows: 210px;
@@ -627,7 +648,9 @@
       font-weight: 800;
     }
 
-    /* Reviews */
+    /* =========================
+       Reviews
+    ========================== */
     .reviews {
       overflow: hidden;
     }
@@ -686,16 +709,26 @@
     }
 
     @keyframes scroll-left {
-      from { transform: translateX(0); }
-      to { transform: translateX(-50%); }
+      from {
+        transform: translateX(0);
+      }
+      to {
+        transform: translateX(-50%);
+      }
     }
 
     @keyframes scroll-right {
-      from { transform: translateX(-50%); }
-      to { transform: translateX(0); }
+      from {
+        transform: translateX(-50%);
+      }
+      to {
+        transform: translateX(0);
+      }
     }
 
-    /* FAQ */
+    /* =========================
+       FAQ
+    ========================== */
     .faq-wrap {
       max-width: 880px;
       margin: 38px auto 0;
@@ -748,7 +781,9 @@
       padding: 0 48px 24px 0;
     }
 
-    /* Contact */
+    /* =========================
+       Contact
+    ========================== */
     .contact-grid {
       grid-template-columns: .9fr 1.1fr;
       align-items: stretch;
@@ -806,7 +841,9 @@
       filter: saturate(.88) contrast(.95);
     }
 
-    /* Footer */
+    /* =========================
+       Footer
+    ========================== */
     footer {
       padding: 42px 0;
       border-top: 1px solid rgba(223, 194, 125, .16);
@@ -838,6 +875,9 @@
       font-size: 13px;
     }
 
+    /* =========================
+       Responsive
+    ========================== */
     @media (max-width: 1040px) {
       .experience-grid {
         grid-template-columns: repeat(2, 1fr);
@@ -1064,11 +1104,13 @@
               <h3>Private Setting</h3>
               <p>Designed for calm, low-noise relaxation with a sense of personal space.</p>
             </article>
+
             <article class="feature-card">
               <div class="icon">◌</div>
               <h3>Clean Comfort</h3>
               <p>A polished spa environment with fresh presentation and thoughtful details.</p>
             </article>
+
             <article class="feature-card">
               <div class="icon">☾</div>
               <h3>Easy Rhythm</h3>
@@ -1081,9 +1123,11 @@
           <div class="collage-card main">
             <img src="https://i.pinimg.com/1200x/6a/df/fe/6adffe5706bdce88dd2d2d0fc6875398.jpg" alt="Warm spa atmosphere" loading="lazy">
           </div>
+
           <div class="collage-card small">
             <img src="https://i.pinimg.com/736x/b2/70/f1/b270f10f3194814c5672d6d358710b87.jpg" alt="Relaxing spa detail" loading="lazy">
           </div>
+
           <div class="collage-badge">
             <strong>Welcoming Space</strong>
             <span>Women-owned, Asian-owned, Latino-owned, Black-owned, and LGBTQ+ friendly community notes.</span>
@@ -1099,6 +1143,7 @@
             <span class="eyebrow">Services & Pricing</span>
             <h2>Service menu coming soon.</h2>
           </div>
+
           <p>
             Specific service items are not listed at this time. Please call the spa directly to confirm
             available options, duration, and current pricing.
@@ -1120,7 +1165,7 @@
             </div>
           </div>
 
-          <div class="service-empty-card" aria-label="Spa atmosphere image">
+          <div class="service-empty-card" aria-label="Massage room atmosphere image">
             <span>Menu To Be Confirmed</span>
           </div>
         </div>
@@ -1134,6 +1179,7 @@
             <span class="eyebrow">Luxury Experience</span>
             <h2>A boutique spa flow shaped around ease and privacy.</h2>
           </div>
+
           <p>
             Every detail supports a peaceful visit: a calm arrival, quiet treatment space,
             simple communication, and an unhurried finish.
@@ -1146,16 +1192,19 @@
             <h3>Calm Arrival</h3>
             <p>Settle in with a soft welcome, clear communication, and a peaceful transition from outside noise.</p>
           </article>
+
           <article class="experience-card reveal">
             <div class="experience-number">02</div>
             <h3>Private Space</h3>
             <p>Enjoy a quiet setting that keeps the focus on comfort, rest, and personal ease.</p>
           </article>
+
           <article class="experience-card reveal">
             <div class="experience-number">03</div>
             <h3>Mindful Details</h3>
             <p>Clean presentation, warm textures, and subtle touches help the whole visit feel composed.</p>
           </article>
+
           <article class="experience-card reveal">
             <div class="experience-number">04</div>
             <h3>Restful Finish</h3>
@@ -1177,20 +1226,23 @@
 
         <div class="grid gallery-grid">
           <figure class="gallery-item tall reveal">
-            <img src="https://i.pinimg.com/736x/03/21/c2/0321c2f08d3d28047dd64de0564d78f1.jpg" alt="Luxury spa seating atmosphere" loading="lazy">
-            <figcaption class="gallery-caption">Polished spa comfort</figcaption>
+            <img src="https://i.pinimg.com/1200x/dc/36/fe/dc36feaf9cc11bec29cc3de7834c539e.jpg" alt="Quiet massage room with treatment table" loading="lazy">
+            <figcaption class="gallery-caption">Quiet massage room</figcaption>
           </figure>
+
           <figure class="gallery-item reveal">
             <img src="https://i.pinimg.com/1200x/71/a4/b7/71a4b75a19fbadf33bc6dc340e91340c.jpg" alt="Peaceful spa detail" loading="lazy">
             <figcaption class="gallery-caption">Grounded calm</figcaption>
           </figure>
+
           <figure class="gallery-item reveal">
             <img src="https://i.pinimg.com/736x/77/a4/c5/77a4c58f8e90ffbbf48d88be689cff6b.jpg" alt="Warm spa detail" loading="lazy">
             <figcaption class="gallery-caption">Warm detail</figcaption>
           </figure>
+
           <figure class="gallery-item wide reveal">
-            <img src="https://i.pinimg.com/1200x/dc/36/fe/dc36feaf9cc11bec29cc3de7834c539e.jpg" alt="Calm spa room" loading="lazy">
-            <figcaption class="gallery-caption">Quiet room energy</figcaption>
+            <img src="https://i.pinimg.com/736x/4c/2b/cb/4c2bcb39fbc7189277e8e505c2e1bc8f.jpg" alt="Calm massage room atmosphere" loading="lazy">
+            <figcaption class="gallery-caption">Restful treatment space</figcaption>
           </figure>
         </div>
       </div>
@@ -1205,33 +1257,129 @@
       <div class="marquee-wrap">
         <div class="marquee">
           <div class="marquee-track">
-            <article class="review-card"><div class="stars">★★★★★</div><p>The space felt quiet and very clean. I appreciated how peaceful the visit felt from start to finish.</p><span>Local Guest</span></article>
-            <article class="review-card"><div class="stars">★★★★★</div><p>A calm, comfortable place to unwind after a long workday. The room was private, warm, and easy to settle into.</p><span>Jacksonville Visitor</span></article>
-            <article class="review-card"><div class="stars">★★★★★</div><p>I liked the relaxed atmosphere. Nothing felt rushed, and the whole visit felt thoughtful.</p><span>Returning Guest</span></article>
-            <article class="review-card"><div class="stars">★★★★★</div><p>Very clean, quiet, and welcoming. It is the kind of place I would recommend for anyone needing a reset.</p><span>Neighborhood Guest</span></article>
-            <article class="review-card"><div class="stars">★★★★★</div><p>The setting felt refined and peaceful. Soft lighting, easy communication, and a calm mood.</p><span>Spa Guest</span></article>
+            <article class="review-card">
+              <div class="stars">★★★★★</div>
+              <p>The space felt quiet and very clean. I appreciated how peaceful the visit felt from start to finish.</p>
+              <span>Local Guest</span>
+            </article>
 
-            <article class="review-card"><div class="stars">★★★★★</div><p>The space felt quiet and very clean. I appreciated how peaceful the visit felt from start to finish.</p><span>Local Guest</span></article>
-            <article class="review-card"><div class="stars">★★★★★</div><p>A calm, comfortable place to unwind after a long workday. The room was private, warm, and easy to settle into.</p><span>Jacksonville Visitor</span></article>
-            <article class="review-card"><div class="stars">★★★★★</div><p>I liked the relaxed atmosphere. Nothing felt rushed, and the whole visit felt thoughtful.</p><span>Returning Guest</span></article>
-            <article class="review-card"><div class="stars">★★★★★</div><p>Very clean, quiet, and welcoming. It is the kind of place I would recommend for anyone needing a reset.</p><span>Neighborhood Guest</span></article>
-            <article class="review-card"><div class="stars">★★★★★</div><p>The setting felt refined and peaceful. Soft lighting, easy communication, and a calm mood.</p><span>Spa Guest</span></article>
+            <article class="review-card">
+              <div class="stars">★★★★★</div>
+              <p>A calm, comfortable place to unwind after a long workday. The room was private, warm, and easy to settle into.</p>
+              <span>Jacksonville Visitor</span>
+            </article>
+
+            <article class="review-card">
+              <div class="stars">★★★★★</div>
+              <p>I liked the relaxed atmosphere. Nothing felt rushed, and the whole visit felt thoughtful.</p>
+              <span>Returning Guest</span>
+            </article>
+
+            <article class="review-card">
+              <div class="stars">★★★★★</div>
+              <p>Very clean, quiet, and welcoming. It is the kind of place I would recommend for anyone needing a reset.</p>
+              <span>Neighborhood Guest</span>
+            </article>
+
+            <article class="review-card">
+              <div class="stars">★★★★★</div>
+              <p>The setting felt refined and peaceful. Soft lighting, easy communication, and a calm mood.</p>
+              <span>Spa Guest</span>
+            </article>
+
+            <article class="review-card">
+              <div class="stars">★★★★★</div>
+              <p>The space felt quiet and very clean. I appreciated how peaceful the visit felt from start to finish.</p>
+              <span>Local Guest</span>
+            </article>
+
+            <article class="review-card">
+              <div class="stars">★★★★★</div>
+              <p>A calm, comfortable place to unwind after a long workday. The room was private, warm, and easy to settle into.</p>
+              <span>Jacksonville Visitor</span>
+            </article>
+
+            <article class="review-card">
+              <div class="stars">★★★★★</div>
+              <p>I liked the relaxed atmosphere. Nothing felt rushed, and the whole visit felt thoughtful.</p>
+              <span>Returning Guest</span>
+            </article>
+
+            <article class="review-card">
+              <div class="stars">★★★★★</div>
+              <p>Very clean, quiet, and welcoming. It is the kind of place I would recommend for anyone needing a reset.</p>
+              <span>Neighborhood Guest</span>
+            </article>
+
+            <article class="review-card">
+              <div class="stars">★★★★★</div>
+              <p>The setting felt refined and peaceful. Soft lighting, easy communication, and a calm mood.</p>
+              <span>Spa Guest</span>
+            </article>
           </div>
         </div>
 
         <div class="marquee reverse">
           <div class="marquee-track">
-            <article class="review-card"><div class="stars">★★★★★</div><p>Easy to find and very relaxing once inside. I liked the quiet pace and comfortable room.</p><span>Verified Guest</span></article>
-            <article class="review-card"><div class="stars">★★★★★</div><p>The atmosphere was gentle and private. I left feeling calmer and glad I made time for myself.</p><span>First-Time Guest</span></article>
-            <article class="review-card"><div class="stars">★★★★★</div><p>Clean rooms, warm service, and a smooth experience. A great local option for quiet spa time.</p><span>Local Regular</span></article>
-            <article class="review-card"><div class="stars">★★★★★</div><p>I appreciated the welcoming feeling and calm environment. It was comfortable without being overly formal.</p><span>Southside Guest</span></article>
-            <article class="review-card"><div class="stars">★★★★★</div><p>The visit felt peaceful from the moment I arrived. The space is tidy, warm, and easy to relax in.</p><span>Wellness Guest</span></article>
+            <article class="review-card">
+              <div class="stars">★★★★★</div>
+              <p>Easy to find and very relaxing once inside. I liked the quiet pace and comfortable room.</p>
+              <span>Verified Guest</span>
+            </article>
 
-            <article class="review-card"><div class="stars">★★★★★</div><p>Easy to find and very relaxing once inside. I liked the quiet pace and comfortable room.</p><span>Verified Guest</span></article>
-            <article class="review-card"><div class="stars">★★★★★</div><p>The atmosphere was gentle and private. I left feeling calmer and glad I made time for myself.</p><span>First-Time Guest</span></article>
-            <article class="review-card"><div class="stars">★★★★★</div><p>Clean rooms, warm service, and a smooth experience. A great local option for quiet spa time.</p><span>Local Regular</span></article>
-            <article class="review-card"><div class="stars">★★★★★</div><p>I appreciated the welcoming feeling and calm environment. It was comfortable without being overly formal.</p><span>Southside Guest</span></article>
-            <article class="review-card"><div class="stars">★★★★★</div><p>The visit felt peaceful from the moment I arrived. The space is tidy, warm, and easy to relax in.</p><span>Wellness Guest</span></article>
+            <article class="review-card">
+              <div class="stars">★★★★★</div>
+              <p>The atmosphere was gentle and private. I left feeling calmer and glad I made time for myself.</p>
+              <span>First-Time Guest</span>
+            </article>
+
+            <article class="review-card">
+              <div class="stars">★★★★★</div>
+              <p>Clean rooms, warm service, and a smooth experience. A great local option for quiet spa time.</p>
+              <span>Local Regular</span>
+            </article>
+
+            <article class="review-card">
+              <div class="stars">★★★★★</div>
+              <p>I appreciated the welcoming feeling and calm environment. It was comfortable without being overly formal.</p>
+              <span>Southside Guest</span>
+            </article>
+
+            <article class="review-card">
+              <div class="stars">★★★★★</div>
+              <p>The visit felt peaceful from the moment I arrived. The space is tidy, warm, and easy to relax in.</p>
+              <span>Wellness Guest</span>
+            </article>
+
+            <article class="review-card">
+              <div class="stars">★★★★★</div>
+              <p>Easy to find and very relaxing once inside. I liked the quiet pace and comfortable room.</p>
+              <span>Verified Guest</span>
+            </article>
+
+            <article class="review-card">
+              <div class="stars">★★★★★</div>
+              <p>The atmosphere was gentle and private. I left feeling calmer and glad I made time for myself.</p>
+              <span>First-Time Guest</span>
+            </article>
+
+            <article class="review-card">
+              <div class="stars">★★★★★</div>
+              <p>Clean rooms, warm service, and a smooth experience. A great local option for quiet spa time.</p>
+              <span>Local Regular</span>
+            </article>
+
+            <article class="review-card">
+              <div class="stars">★★★★★</div>
+              <p>I appreciated the welcoming feeling and calm environment. It was comfortable without being overly formal.</p>
+              <span>Southside Guest</span>
+            </article>
+
+            <article class="review-card">
+              <div class="stars">★★★★★</div>
+              <p>The visit felt peaceful from the moment I arrived. The space is tidy, warm, and easy to relax in.</p>
+              <span>Wellness Guest</span>
+            </article>
           </div>
         </div>
       </div>
@@ -1298,6 +1446,7 @@
         <div class="grid contact-grid">
           <div class="contact-card reveal">
             <h3>Cai Xia SPA & Massage</h3>
+
             <p style="margin-top: 16px;">
               14965 Old St Augustine Rd #123<br>
               Jacksonville, FL 32258<br>
@@ -1316,7 +1465,7 @@
               <div><strong>Thursday</strong><span>9:30 AM – 8:30 PM</span></div>
               <div><strong>Friday</strong><span>9:30 AM – 8:30 PM</span></div>
               <div><strong>Saturday</strong><span>9:30 AM – 8:30 PM</span></div>
-              <div><strong>Sunday</strong><span>9:30 AM – 8:30 PM</span></div>
+              <div><strong>Sunday</strong><span>10:30 AM – 7:00 PM</span></div>
             </div>
           </div>
 
@@ -1341,6 +1490,7 @@
           <span class="brand-mark">CX</span>
           <span>Cai Xia SPA & Massage</span>
         </a>
+
         <p class="copyright">
           Calm rooms, thoughtful care, and refined spa time in Jacksonville.
           <br>© <span id="year"></span> Cai Xia SPA & Massage. All rights reserved.
@@ -1389,6 +1539,7 @@
       "https://i.pinimg.com/736x/77/a4/c5/77a4c58f8e90ffbbf48d88be689cff6b.jpg",
       "https://i.pinimg.com/1200x/dc/36/fe/dc36feaf9cc11bec29cc3de7834c539e.jpg"
     ];
+
     let heroIndex = 0;
 
     function setHeroImage() {
@@ -1445,7 +1596,20 @@
       "postalCode": "32258",
       "addressCountry": "US"
     },
-    "openingHours": "Mo-Su 09:30-20:30"
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+        "opens": "09:30",
+        "closes": "20:30"
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": "Sunday",
+        "opens": "10:30",
+        "closes": "19:00"
+      }
+    ]
   }
   </script>
 </body>
